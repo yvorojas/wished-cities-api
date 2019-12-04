@@ -1,5 +1,6 @@
 import express from 'express'
 import bodyParser from 'body-parser'
+const port = process.env.PORT || 3000
 let app = express()
 
 app.use(bodyParser.json())
@@ -13,6 +14,6 @@ router.get('/', (req, res, next) => {
 
 app.use(router)
 
-app.listen(3000, function() {
+app.listen(port, function() {
   console.log('Example app listening on port 3000!')
 })
