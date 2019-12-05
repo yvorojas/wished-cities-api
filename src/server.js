@@ -15,5 +15,5 @@ router.get('/', (req, res, next) => {
 app.use(router)
 
 app.listen(port, function() {
-  console.log('Example app listening on port 3000!')
+  console.log('API listening on port 3000!')
 })
